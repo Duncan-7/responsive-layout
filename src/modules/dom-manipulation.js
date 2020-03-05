@@ -72,6 +72,13 @@ export const createLoadMoreButton = () => {
   return button;
 }
 
+export const createError = () => {
+  const container = document.getElementById('preview-container');
+  const error = document.createElement('p');
+  error.textContent = "There was an error finding course data. Please reload the page."
+  container.appendChild(error);
+}
+
 export const removeLoadMoreButton = () => {
   const button = document.getElementById('load-more');
   button.parentNode.removeChild(button);

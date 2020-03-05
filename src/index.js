@@ -25,7 +25,7 @@ APICall()
     renderData();
   })
   .catch(error => {
-    console.log(error);
+    domManipulation.createError();
   });
 
 const addLoadMoreButton = () => {
@@ -34,7 +34,7 @@ const addLoadMoreButton = () => {
     const button = domManipulation.createLoadMoreButton();
     button.addEventListener('click', showMore)
     container.appendChild(button);
-  }
+  };
 }
 
 const showMore = () => {
