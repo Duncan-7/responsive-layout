@@ -89,18 +89,12 @@ header p {
 /* Navbar */
 nav {
   width: 100%;
-  background-color: white;
+  background-color: #fff;
 }
 
 .nav-container {
   padding-left: 10px;
   padding-right: 10px;
-}
-
-.nav-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav-categories {
@@ -127,7 +121,7 @@ article img {
 }
 
 #preview-container {
-  background-color: white;
+  background-color: #fff;
   padding: 15px;
   text-align: center;
 }
@@ -244,41 +238,22 @@ aside {
 
 @media (min-width: 800px) {
   body {
-    font-family: 'Roboto', sans-serif;
     background-color: #EDF0F3;
-  }
-
-  .button {
-    padding: 9px 14px;
-    display: inline-block;
-    border-radius: 4px;
-    border: 2px solid #00AEEF;
-    cursor: pointer;
-  }
-
-  .button a {
-    text-decoration: none;
-    color: inherit;
   }
 
   /* Header */
   .header {
-    width: 100%;
-    color: white;
     min-width: 1180px;
   }
 
   .header-bar {
-    height: 70px;
-    background: #1C232E 0% 0% no-repeat padding-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 30px 0 30px;
-    font-size: 14px;
   }
 
-  header .button {
+  .header-bar .button {
     display: inline-block;
   }
 
@@ -286,25 +261,8 @@ aside {
     display: none;
   }
 
-  .menu-icon div {
-    width: 35px;
-    height: 5px;
-    background-color: #fff;
-    margin: 6px 0;
-  }
-
-  .filled {
-    background: #00AEEF 0% 0% no-repeat padding-box;
-    margin-right: 15px;
-  }
-
-  .outline {
-    color:  #00AEEF;
-  }
-
   .header-background {
     height: 298px;
-    width: 100%;
     padding-top: 60px;
   }
 
@@ -330,9 +288,7 @@ aside {
 
   /* Navbar */
   nav {
-    width: 100%;
     min-width: 1180px;
-    background-color: white;
   }
 
   .nav-container {
@@ -342,28 +298,15 @@ aside {
   }
 
   .nav-content {
-    width: 870px;
+    width: 860px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .nav-categories {
-    height: 60px;
     width: 549px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-size: 18px;
-    
-  }
-
-  .selected {
-    border-bottom: 4px solid #00AEEF;
-  }
-
-  .category {
-    cursor: pointer;
   }
 
   /* Main Content */
@@ -382,22 +325,16 @@ aside {
 
   #preview-container {
     width: 870px;
-    background-color: white;
     padding: 30px;
-    text-align: center;
     margin: 0 30px 30px 0;
   }
 
   .preview {
     display: flex;
-    color: #000000;
-    margin-bottom: 60px;
-    text-align: left;
   }
 
   .preview-image {
     margin-right: 30px;
-    position: relative;
     margin-bottom: 0px;
   }
 
@@ -410,100 +347,33 @@ aside {
 
   article h3 {
     font-size: 20px;
-    line-height: 30px;
     margin-bottom: 0px;
   }
 
   .description {
-    font-size: 16px;
-    line-height: 26px;
     margin-bottom: 0;
   }
 
-  .price {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  .bold {
-    font-weight: bold;
-  }
-
   .caption {
-    display: inline-block;
-    position: absolute;
     top: 115px;
-    left: 0px;
-    font-size: 14px;
-    color: #ffffff;
-    z-index: 10;
-    line-height: 22px;
-    padding: 0 4px;
-  }
-
-  .tax {
-    background-color: #FF31C1;
-  }
-
-  .technology {
-    background-color: #99C736;
-  }
-
-  .communication {
-    background-color: #EF7C00;
   }
 
   /* Aside */
   aside {
     width: 270px;
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .links {
-    display: block;
-    text-decoration: none;
-    background-color: #fff;
-    padding: 9px 0 8px 30px;
-    color: #000;
-    border-bottom: 1px solid #EDF0F3;
-  }
-
-  .special {
-    color: #00AEEF;
-    border-top: 1px solid #00AEEF;
+    padding: 0;
   }
 
   /* Footer */
   .footer {
-    width: 100%;
     min-width: 1180px;
-    font-size: 14px;
-    color: white;
   }
 
   .footer-bar {
     height: 100px;
-    background: #1C232E 0% 0% no-repeat padding-box;
-    display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-direction: row;
     padding: 0 5px 30px 30px;
-    font-size: 14px;
-  }
-
-  .footer a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .footer-link {
-    border-right: 1px solid #ffffff;
-    display: inline-block;
-    padding: 5px 10px;
-  }
-
-  .last {
-    border: none;
   }
 }

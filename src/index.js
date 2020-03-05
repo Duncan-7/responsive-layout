@@ -64,8 +64,11 @@ const sortData = () => {
     case "alphabetical":
       data.sort((a, b) => a.title.localeCompare(b.title));
       break;
-    case "price":
+    case "price-increasing":
       data.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+      break;
+    case "price-decreasing":
+      data.sort((a, b) => parseFloat(a.price) - parseFloat(b.price)).reverse();
       break;
     default:
       break;
