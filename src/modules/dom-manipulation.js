@@ -16,6 +16,7 @@ export const createPreview = (courseInfo) => {
   imageContainer.setAttribute('class', 'preview-image');
   const image = document.createElement('img');
   image.setAttribute('src', 'assets/' + courseInfo.imageSrc);
+  image.setAttribute('alt', courseInfo.altText);
   const caption = document.createElement('div');
   switch (courseInfo.type) {
     case 'tax':
